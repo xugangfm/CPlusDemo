@@ -10,7 +10,7 @@
 #define CPlusDemo_CustomTemplate_h
 #include <iostream>
 
-//模板函数可以看做安全的宏定义，不能吧申明和定义分开
+//模板函数可以看做安全的宏定义，不能把申明和定义分开
 template <class TT>
 TT MyMax(TT a,TT b) {
     if (a<b) {
