@@ -21,6 +21,18 @@
 //    }
 //}
 
+class A {
+public:
+    A(){std::cout << "create A\n";};
+     ~A(){ std::cout << "delete A\n"; }
+};
+
+class B :public A{
+public:
+    B(){std::cout << "create B\n";};
+    ~B(){ std::cout << "delete B\n"; }
+};
+
 
 void TestName_Space(void)
 {
@@ -52,8 +64,13 @@ int main(int argc, const char * argv[])
     //TestName_Space();
     //TestTemplate();
     
-    myClass<int, int> *obj = new myClass<int, int>(5,9);
-    obj->show();
+    //myClass<int, int> *obj = new myClass<int, int>(5,9);
+    //obj->show();
+    
+    A *a =new B();
+    delete a;
+    
+    
     return 0;
 }
 
