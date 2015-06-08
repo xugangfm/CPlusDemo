@@ -70,7 +70,8 @@ void myClass<T1, T2>::show()
 
 typedef enum { QI_MALLOC, QI_NEW } QIPTRMALLOCTYPE;
 
-template <class T, QIPTRMALLOCTYPE ptrmalloctype = QI_MALLOC> class CQIPtr {
+template <class T, QIPTRMALLOCTYPE ptrmalloctype = QI_MALLOC>
+class CQIPtr {
 public:
   CQIPtr(T *p = 0) { m_p = p; }
 
