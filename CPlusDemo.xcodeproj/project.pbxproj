@@ -209,6 +209,7 @@
 		51570C9C197B63BD000AE072 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +217,7 @@
 		51570C9D197B63BD000AE072 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
