@@ -17,6 +17,7 @@
 #include <mutex>
 #include <future>
 #include <list>
+#include "json11.hpp"
 
 using namespace std;
 using namespace custom;
@@ -146,6 +147,45 @@ void TestPTR(){
     
 }
 
+void Testjson()
+{
+    #define FAILED_IF(state) do { if(state) { ; return; } }while(0)
+    std::string str = "{\"requestTime\":1433838568,\"responseTime\":1433838568,\"data\":{\"recentTalk\":[{\"version\":\"1.0\",\"timeStamp\":1433838568,\"value\":[{\"msgNewCount\":\"0\",\"msgCount\":\"7\",\"updateTime\":\"1433838552\",\"msgType\":\"post_private\",\"toId\":\"3513216745\",\"toName\":\"\u8bbf\u5ba2216745\",\"lastMsg\":{\"msgId\":90978783245,\"msgSeq\":0,\"senderId\":\"27648860\",\"senderName\":\"william010\",\"contents\":[[\"font\",{\"color\":\"000\",\"name\":\"\u5b8b\u4f53\",\"size\":10,\"style\":[0,0,0]}],\"434\",[\"post\",{\"id\":\"0_0_0_0\",\"title\":\"\"}]]}}]}],\"talkupdatetime\":\"1433405878\"},\"errorCode\":0,\"errorMsg\":\"no error\"}";
+    
+    std::string error;
+    
+    auto jsonobject = json11::Json::parse(str, error);;
+    FAILED_IF(!error.empty());
+    std::cout << jsonobject["requestTime"].int32_value() <<std::endl;
+    std::cout << jsonobject["errorMsg"].string_value() <<std::endl;
+    
+    auto jsonData =jsonobject["data"];
+    
+    std::cout << jsonData["talkupdatetime"].string_value() <<std::endl;
+    
+    auto talkAttay = jsonData["recentTalk"];
+    
+    FAILED_IF(!talkAttay.is_array());
+    
+    for (auto& talk : talkAttay.array_items()) {
+        
+        auto item = talk["version"].string_value();
+        std::cout << item <<std::endl;
+        
+        auto valueArray = talk["value"];
+        
+        for (auto& v:valueArray.array_items()) {
+            
+            std::cout << v["msgNewCount"].string_value() <<std::endl;
+            std::cout << v["msgCount"].string_value() <<std::endl;
+        }
+    }
+    
+    
+    
+    
+
+}
 
 
 
@@ -165,7 +205,8 @@ int main(int argc, const char *argv[]) {
   // delete a;
 
   //TestCQI();
-    TestPTR();
+    //TestPTR();
+    Testjson();
 
   return 0;
 }

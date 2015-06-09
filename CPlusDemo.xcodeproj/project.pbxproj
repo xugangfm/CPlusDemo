@@ -11,6 +11,7 @@
 		51570C98197B63BD000AE072 /* CPlusDemo.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51570C97197B63BD000AE072 /* CPlusDemo.1 */; };
 		51570CA0197B63FC000AE072 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51570C9E197B63FC000AE072 /* Rect.cpp */; };
 		515C387C197FB828006C7ED4 /* CustomTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 515C387B197FB827006C7ED4 /* CustomTemplate.cpp */; };
+		5184986E1B26E35400AF0E4A /* json11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5184986C1B26E35400AF0E4A /* json11.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		51570C9F197B63FC000AE072 /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
 		515C387A197FB811006C7ED4 /* CustomTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTemplate.h; sourceTree = "<group>"; };
 		515C387B197FB827006C7ED4 /* CustomTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomTemplate.cpp; sourceTree = "<group>"; };
+		5184986C1B26E35400AF0E4A /* json11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json11.cpp; sourceTree = "<group>"; };
+		5184986D1B26E35400AF0E4A /* json11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json11.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				51570C95197B63BD000AE072 /* main.cpp */,
 				51570C9E197B63FC000AE072 /* Rect.cpp */,
 				51570C9F197B63FC000AE072 /* Rect.h */,
+				5184986C1B26E35400AF0E4A /* json11.cpp */,
+				5184986D1B26E35400AF0E4A /* json11.hpp */,
 				515C387A197FB811006C7ED4 /* CustomTemplate.h */,
 				515C387B197FB827006C7ED4 /* CustomTemplate.cpp */,
 			);
@@ -130,6 +135,7 @@
 				51570C96197B63BD000AE072 /* main.cpp in Sources */,
 				515C387C197FB828006C7ED4 /* CustomTemplate.cpp in Sources */,
 				51570CA0197B63FC000AE072 /* Rect.cpp in Sources */,
+				5184986E1B26E35400AF0E4A /* json11.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
