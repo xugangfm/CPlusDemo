@@ -122,6 +122,12 @@ void TestPTR(){
     std::shared_ptr<int> number2(new int(12));
     std::shared_ptr<int> number3(new int(13));
     std::weak_ptr<int> weak_number = number2;
+    
+    //number2.get();
+    //weak_number.lock();
+    
+    std::cout << "weak-number2="<< *(weak_number.lock()) << std::endl;
+    
     //std::unique_ptr<int> result = Func(move(number));
     number = Func(move(number));;
     std::cout << *number << std::endl;
