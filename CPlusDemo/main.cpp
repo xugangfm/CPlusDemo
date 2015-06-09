@@ -22,6 +22,8 @@
 using namespace std;
 using namespace custom;
 
+using namespace json11;
+
 // template <class TT>
 //
 // TT MyMax(TT a,TT b) {
@@ -180,6 +182,32 @@ void Testjson()
             std::cout << v["msgCount"].string_value() <<std::endl;
         }
     }
+    
+    
+    
+//    json11::Json name = "xugang",age = 30;
+//    
+//    json11::Json arr;
+//    
+//    json11::Json jnull; // creates a null Json object.
+//    json11::Json jtrue = true, pi = 3.14, str = "Hello";  // scalar objects
+//    json11::Json arr { 1, 2, str };   // array object, using initializer list
+//    arr << false;  // do you prefer 'push_back' ?
+    
+    //json11::Json user;
+    
+    Json my_json = Json::object {
+        { "key1", "value1" },
+        { "key2", false },
+        { "key3", Json::array { 1, 2, 3 } },
+    };
+    std::string json_str = my_json.dump();
+    
+    std::cout << json_str << endl;
+    
+   
+    
+    
     
     
     
