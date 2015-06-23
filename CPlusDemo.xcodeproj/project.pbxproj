@@ -12,6 +12,7 @@
 		51570CA0197B63FC000AE072 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51570C9E197B63FC000AE072 /* Rect.cpp */; };
 		515C387C197FB828006C7ED4 /* CustomTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 515C387B197FB827006C7ED4 /* CustomTemplate.cpp */; };
 		5184986E1B26E35400AF0E4A /* json11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5184986C1B26E35400AF0E4A /* json11.cpp */; };
+		5184990E1B28495800AF0E4A /* Calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5184990C1B28495800AF0E4A /* Calculate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		515C387B197FB827006C7ED4 /* CustomTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomTemplate.cpp; sourceTree = "<group>"; };
 		5184986C1B26E35400AF0E4A /* json11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json11.cpp; sourceTree = "<group>"; };
 		5184986D1B26E35400AF0E4A /* json11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json11.hpp; sourceTree = "<group>"; };
+		5184990C1B28495800AF0E4A /* Calculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Calculate.cpp; sourceTree = "<group>"; };
+		5184990D1B28495800AF0E4A /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 			children = (
 				51570C97197B63BD000AE072 /* CPlusDemo.1 */,
 				51570C95197B63BD000AE072 /* main.cpp */,
+				5184990C1B28495800AF0E4A /* Calculate.cpp */,
+				5184990D1B28495800AF0E4A /* Calculate.h */,
 				51570C9E197B63FC000AE072 /* Rect.cpp */,
 				51570C9F197B63FC000AE072 /* Rect.h */,
 				5184986C1B26E35400AF0E4A /* json11.cpp */,
@@ -136,6 +141,7 @@
 				515C387C197FB828006C7ED4 /* CustomTemplate.cpp in Sources */,
 				51570CA0197B63FC000AE072 /* Rect.cpp in Sources */,
 				5184986E1B26E35400AF0E4A /* json11.cpp in Sources */,
+				5184990E1B28495800AF0E4A /* Calculate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

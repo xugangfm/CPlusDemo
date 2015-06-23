@@ -18,6 +18,7 @@
 #include <future>
 #include <list>
 #include "json11.hpp"
+#include "Calculate.h"
 
 using namespace std;
 using namespace custom;
@@ -235,6 +236,8 @@ int main(int argc, const char *argv[]) {
   //TestCQI();
     //TestPTR();
     Testjson();
-
+    std::cout << calc:: add(5, 5) << endl;
+    
+    
   return 0;
 }
