@@ -3,3 +3,9 @@ CPlusDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 CPlusDemo.xcodeproj/project.xcworkspace/xcshareddata/CPlusDemo.xccheckout
 CPlusDemo.xcodeproj/xcuserdata/xugang.xcuserdatad/xcschemes/CPlusDemo.xcscheme
 CPlusDemo.xcodeproj/xcuserdata/xugang.xcuserdatad/xcschemes/xcschememanagement.plist
+
+build/
+bin/
+xcuserdata/
+project.xcworkspace/
+.DS_Store
