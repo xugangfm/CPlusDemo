@@ -20,6 +20,7 @@
 #include "json11.hpp"
 #include "Calculate.h"
 #include "MyEnumeration.h"
+#include "TestClass11.h"
 
 using namespace std;
 using namespace custom;
@@ -232,14 +233,54 @@ int main(int argc, const char* argv[])
     //Testjson();
     //std::cout << calc:: add(5, 5) << endl;
 
-    Collor myCol = yellow;
+    switch (1) {
+    case 1: {
+        Talk a(2);
+        Talk b(3);
+        a = b;
+        std::cout << "-----------------" << std::endl;
+        Talk d(10);
+        Talk c = b;
 
-    std::cout << myCol << std::endl;
+        std::cout << "-----------------" << std::endl;
+        Talk e(15);
+        Talk f(17);
+        f = __global_int_talk(44);
+        std::cout << "-----------------" << std::endl;
+        Talk x(115);
+        Talk y(117);
+        x = std::move(y);
+        std::cout << "-----------------" << std::endl;
+        Talk xx(1115);
+        Talk yx(1117);
+        Talk xxx = std::move(yx);
 
-    MsgType type = MsgType::GROUP;
+        std::cout << "-----------------" << std::endl;
 
-    if (type == MsgType::GROUP) {
-        std::cout << "group" << std::endl;
+        Talk* tp = new Talk(555555);
+
+        break;
+    }
+
+    case 2: {
+        Testjson();
+        std::cout << calc::add(5, 5) << endl;
+        break;
+    }
+    case 3: {
+        Collor myCol = yellow;
+
+        std::cout << myCol << std::endl;
+
+        MsgType type = MsgType::GROUP;
+
+        if (type == MsgType::GROUP) {
+            std::cout << "group" << std::endl;
+        }
+        break;
+    }
+    default:
+        break;
     }
 
     return 0;
