@@ -14,6 +14,7 @@
 		5184986E1B26E35400AF0E4A /* json11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5184986C1B26E35400AF0E4A /* json11.cpp */; };
 		5184990E1B28495800AF0E4A /* Calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5184990C1B28495800AF0E4A /* Calculate.cpp */; };
 		5199026D1B6B52CE00BCB886 /* TestClass11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5199026B1B6B52CE00BCB886 /* TestClass11.cpp */; };
+		51A719E91B6B9BBC00F0926F /* TestStdContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51A719E71B6B9BBC00F0926F /* TestStdContainer.cpp */; };
 		51BC15B71B60C82C00F852DC /* MyEnumeration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51BC15B51B60C82C00F852DC /* MyEnumeration.cpp */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		5184990D1B28495800AF0E4A /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
 		5199026B1B6B52CE00BCB886 /* TestClass11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestClass11.cpp; sourceTree = "<group>"; };
 		5199026C1B6B52CE00BCB886 /* TestClass11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass11.h; sourceTree = "<group>"; };
+		51A719E71B6B9BBC00F0926F /* TestStdContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestStdContainer.cpp; sourceTree = "<group>"; };
+		51A719E81B6B9BBC00F0926F /* TestStdContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStdContainer.h; sourceTree = "<group>"; };
 		51BC15B51B60C82C00F852DC /* MyEnumeration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyEnumeration.cpp; sourceTree = "<group>"; };
 		51BC15B61B60C82C00F852DC /* MyEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyEnumeration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,20 +81,22 @@
 		51570C94197B63BD000AE072 /* CPlusDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5199026B1B6B52CE00BCB886 /* TestClass11.cpp */,
-				5199026C1B6B52CE00BCB886 /* TestClass11.h */,
-				51570C97197B63BD000AE072 /* CPlusDemo.1 */,
-				51570C95197B63BD000AE072 /* main.cpp */,
 				5184990C1B28495800AF0E4A /* Calculate.cpp */,
 				5184990D1B28495800AF0E4A /* Calculate.h */,
-				51570C9E197B63FC000AE072 /* Rect.cpp */,
-				51570C9F197B63FC000AE072 /* Rect.h */,
+				51570C97197B63BD000AE072 /* CPlusDemo.1 */,
+				515C387B197FB827006C7ED4 /* CustomTemplate.cpp */,
+				515C387A197FB811006C7ED4 /* CustomTemplate.h */,
 				5184986C1B26E35400AF0E4A /* json11.cpp */,
 				5184986D1B26E35400AF0E4A /* json11.hpp */,
-				515C387A197FB811006C7ED4 /* CustomTemplate.h */,
-				515C387B197FB827006C7ED4 /* CustomTemplate.cpp */,
+				51570C95197B63BD000AE072 /* main.cpp */,
 				51BC15B51B60C82C00F852DC /* MyEnumeration.cpp */,
 				51BC15B61B60C82C00F852DC /* MyEnumeration.h */,
+				51570C9E197B63FC000AE072 /* Rect.cpp */,
+				51570C9F197B63FC000AE072 /* Rect.h */,
+				5199026B1B6B52CE00BCB886 /* TestClass11.cpp */,
+				5199026C1B6B52CE00BCB886 /* TestClass11.h */,
+				51A719E71B6B9BBC00F0926F /* TestStdContainer.cpp */,
+				51A719E81B6B9BBC00F0926F /* TestStdContainer.h */,
 			);
 			path = CPlusDemo;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				51570C96197B63BD000AE072 /* main.cpp in Sources */,
 				51BC15B71B60C82C00F852DC /* MyEnumeration.cpp in Sources */,
 				515C387C197FB828006C7ED4 /* CustomTemplate.cpp in Sources */,
+				51A719E91B6B9BBC00F0926F /* TestStdContainer.cpp in Sources */,
 				51570CA0197B63FC000AE072 /* Rect.cpp in Sources */,
 				5184986E1B26E35400AF0E4A /* json11.cpp in Sources */,
 				5199026D1B6B52CE00BCB886 /* TestClass11.cpp in Sources */,
