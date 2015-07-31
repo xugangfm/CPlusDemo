@@ -34,7 +34,7 @@ public:
 
     Talk(const Talk&& other)
     {
-        std::cout << " addr: " << this << " right constructor called flag :" << flag << std::endl;
+        std::cout << " addr: " << this << " move constructor called flag :" << flag << std::endl;
         this->flag = other.flag;
     }
 

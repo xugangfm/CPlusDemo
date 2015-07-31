@@ -21,6 +21,7 @@
 #include "Calculate.h"
 #include "MyEnumeration.h"
 #include "TestClass11.h"
+#include <map>
 
 using namespace std;
 using namespace custom;
@@ -245,7 +246,7 @@ int main(int argc, const char* argv[])
         std::cout << "-----------------" << std::endl;
         Talk e(15);
         Talk f(17);
-        f = __global_int_talk(44);
+        Talk ff = __global_int_talk(44);
         std::cout << "-----------------" << std::endl;
         Talk x(115);
         Talk y(117);
@@ -257,7 +258,7 @@ int main(int argc, const char* argv[])
 
         std::cout << "-----------------" << std::endl;
 
-        Talk* tp = new Talk(555555);
+        //Talk* tp = new Talk(555555);
 
         break;
     }
