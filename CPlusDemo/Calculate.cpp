@@ -8,9 +8,9 @@
 
 #include "Calculate.h"
 
-namespace calc {
-int add(int x,int y)
+//namespace calc {
+int calc::add(int x, int y)
 {
-    return x+y;
+    return x + y;
 }
-}
+//}

@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <iostream>
 
+
 class Talk {
 private:
     int32_t flag = -1;
@@ -45,6 +46,8 @@ public:
 
         return *this;
     }
+
+    void Print() { std::cout << "PRINT : addr: " << this << "flag :" << flag << std::endl; };
 };
 
 Talk __global_int_talk(int flag);

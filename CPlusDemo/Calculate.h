@@ -12,10 +12,7 @@
 #include <stdio.h>
 
 namespace calc {
-    int add(int x,int y);
+int add(int x, int y);
 }
-
-
-
 
 #endif /* defined(__CPlusDemo__Calculate__) */

@@ -22,6 +22,7 @@
 #include "MyEnumeration.h"
 #include "TestClass11.h"
 #include <map>
+#include "TestStdContainer.h"
 
 using namespace std;
 using namespace custom;
@@ -234,7 +235,7 @@ int main(int argc, const char* argv[])
     //Testjson();
     //std::cout << calc:: add(5, 5) << endl;
 
-    switch (1) {
+    switch (5) {
     case 1: {
         Talk a(2);
         Talk b(3);
@@ -247,6 +248,7 @@ int main(int argc, const char* argv[])
         Talk e(15);
         Talk f(17);
         Talk ff = __global_int_talk(44);
+        ff.Print();
         std::cout << "-----------------" << std::endl;
         Talk x(115);
         Talk y(117);
@@ -280,6 +282,12 @@ int main(int argc, const char* argv[])
         }
         break;
     }
+    case 4: {
+        TestVector();
+    }
+        case 5: {
+            TestMap();
+        }
     default:
         break;
     }
